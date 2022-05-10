@@ -9,6 +9,10 @@ console.log('This is real pure java script project...');
  {
      let addTxt = document.getElementById("addTxt");
      let addTitle = document.getElementById("addTitle");
+     if(!addTxt.value  || !addTitle.value){
+         alert("please fill the required field...");
+         return;
+     }
      let notes = localStorage.getItem("notes");
 
      if(notes==null){
